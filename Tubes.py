@@ -15,3 +15,9 @@ kolom_dipakai = [
 data = data[kolom_dipakai]
 print(data.head())
 print(data.describe())
+print("\n Rentang nilai tiap kolom : ")
+for kolom in kolom_dipakai:
+    print("\nKolom:", kolom)
+    print("Min:", data[kolom].min())
+    print("Max:", data[kolom].max())
+    print("Mean:", data[kolom].mean())
